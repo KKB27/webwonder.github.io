@@ -1,0 +1,125 @@
+/*Primary Colors:
+    Forest Green (#228B22): Represents nature, growth, and eco-friendliness.
+    Sky Blue (#87CEEB): Symbolizes clean air and water, trust, and tranquility.
+Secondary Colors:
+    Earth Brown (#8B4513): Conveys stability, reliability, and a connection to the earth.
+    Sun Yellow (#FFD700): Adds a touch of warmth, energy, and optimism.
+Accent Colors:
+    Leaf Green (#32CD32): Fresh and vibrant, it highlights sustainability and eco-consciousness.
+    Ocean Blue (#4682B4): Deep and calming, it represents the vastness and purity of the ocean.
+Neutrals:
+    Soft White (#F5F5F5): Clean and minimalistic, perfect for backgrounds and ensuring readability.
+    Charcoal Grey (#2F4F4F): A strong, grounding color for text and borders.*/
+.bg1,.bg2,.bg3{
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    opacity: 0.75;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg1{
+    background-image: url("bg.jpg");
+}
+.bg2{
+    background-image: url("bg2.png");
+}
+.bg3{
+    background-image: url("bg3.jpg");
+}
+.name{
+    background-color: black;
+    position: sticky;
+    opacity: 1;
+    color: white;
+    width:100%;
+    height: fit-content;
+    font-size: 7vw;
+    top: 0;
+    text-align: center;
+    font-family:Georgia;
+    z-index: 1000;
+}
+
+.logo{
+    width: 200vw;
+    height: 200vw;
+    margin: auto;
+    float: left;
+}
+
+.captions{
+    opacity: 1;
+    z-index: 100;
+    background-color: #8B4513;
+    width: 100%;
+    height: fit-content;
+
+}
+
+.flexEm{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    justify-content: center;
+    opacity: 1; /* Ensure the container itself is fully opaque */
+    align-items: center;
+    background-color: transparent; /* Set background-color to transparent or remove it */
+    font-size: 2vw;
+    height: auto; /* Adjust height as needed */
+    color: white;
+    text-align: center;
+    position: relative; /* Ensure a position context for z-index */
+    z-index: 2; /* Ensure the flex container is above .bg1 */
+    
+}
+
+.bar{
+    display: -webkit-flex;
+    display: flex;
+    background-color: black;
+    width: 100%;
+    opacity: 1;
+    height: fit-content;
+    font-size: 30px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    z-index: 900;
+    border: 7px solid white;
+}
+
+.bar a{
+    background-color: black;
+    opacity: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.bar a:hover, .bar a:focus{
+    background-color: #f5f5f5;
+    color: black;
+}
+
+.toSide{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: fantasy;
+    text-align: center;
+    color: white;
+    font-size: 3vw;
+    flex-direction: column;
+}
+
