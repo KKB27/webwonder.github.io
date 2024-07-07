@@ -88,7 +88,7 @@ Neutrals:
     height: fit-content;
     font-size: 30px;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     color: white;
